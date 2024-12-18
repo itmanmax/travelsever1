@@ -1,0 +1,124 @@
+.layout-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  background: #001529;
+  color: #fff;
+  transition: width 0.3s;
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.collapsed {
+  width: 80px;
+}
+
+.logo {
+  height: 64px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+}
+
+.menu {
+  flex: 1;
+  padding: 12px 0;
+  overflow-y: auto;
+}
+
+.menu-item {
+  margin: 4px 0;
+}
+
+.menu-title {
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-title:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-user {
+  background-image: url('/icons/user.svg');
+}
+
+.icon-forum {
+  background-image: url('/icons/forum.svg');
+}
+
+.icon-compass {
+  background-image: url('/icons/compass.svg');
+}
+
+.icon-service {
+  background-image: url('/icons/service.svg');
+}
+
+.icon-left {
+  background-image: url('/icons/left.svg');
+}
+
+.icon-right {
+  background-image: url('/icons/right.svg');
+}
+
+.submenu {
+  padding-left: 48px;
+}
+
+.submenu-item {
+  padding: 8px 0;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.submenu-item:hover {
+  color: #fff;
+}
+
+.collapse-btn {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.main-container {
+  flex: 1;
+  margin-left: 240px;
+  transition: margin-left 0.3s;
+  padding: 20px;
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+
+.sidebar.collapsed + .main-container {
+  margin-left: 80px;
+} 

@@ -1,0 +1,132 @@
+.area-guide-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.area-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.area-desc {
+  color: #666;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+/* 攻略部分 */
+.guide-section {
+  margin-bottom: 40px;
+}
+
+.guides-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.guide-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.guide-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.guide-info {
+  padding: 15px;
+}
+
+.guide-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+/* 景点部分 */
+.attractions-section {
+  margin-bottom: 40px;
+}
+
+.attractions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.attraction-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.attraction-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.attraction-card h3,
+.attraction-card p {
+  padding: 10px 15px;
+}
+
+.attraction-meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-top: 1px solid #eee;
+}
+
+/* 推荐部分 */
+.recommendations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.list {
+  display: grid;
+  gap: 15px;
+}
+
+.item-card {
+  display: flex;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.item-info {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rating, .price {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+} 

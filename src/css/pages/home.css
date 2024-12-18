@@ -1,0 +1,15 @@
+.home {
+  padding: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 0;
+  background: var(--background-color);
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: var(--text-color);
+} 
