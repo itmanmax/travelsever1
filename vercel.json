@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "http://travelsever1.maxtral.fun/api/:path*"
+    }
+  ]
+} 

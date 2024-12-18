@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // API基础配置
-export const API_BASE_URL = 'http://travelsever1.maxtral.fun/api'
+export const API_BASE_URL = '/api'
 
 // API请求超时时间
 export const TIMEOUT = 5000
@@ -29,8 +29,7 @@ const instance = axios.create({
   timeout: TIMEOUT,
   headers: {
     'Content-Type': 'application/json'
-  },
-  withCredentials: true // 允许跨域携带cookie
+  }
 })
 
 // 请求拦截器

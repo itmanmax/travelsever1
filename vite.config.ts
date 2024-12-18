@@ -13,9 +13,10 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:8080',
+        target: 'http://travelsever1.maxtral.fun',
         changeOrigin: true,
-        secure: false
+        // 不需要重写路径，因为我们的API基础路径已经包含/api
+        // rewrite: (path) => path.replace(/^\/api/, '')
       }
     }
   }
